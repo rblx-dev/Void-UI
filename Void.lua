@@ -80,14 +80,17 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+	Name = "Ink Game",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lebumbum/leyield/refs/heads/main/inkgame'))()
+	Rayfield:Destroy()
+	end
+
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "Coming Soon!",
    Callback = function()
-   Rayfield:Notify({
-   Title = "Coming Soon",
-   Content = "This command is coming soon.",
-   Duration = 6.5,
-   Image = "x",
+   print("This tab is coming soon.")
    end
 })
