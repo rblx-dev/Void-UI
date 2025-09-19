@@ -6,7 +6,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Void UI",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Loading..",
+   LoadingTitle = "Loading UI..",
    LoadingSubtitle = "Scripted by materials not found.",
    ShowText = "Void UI", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
@@ -48,6 +48,7 @@ local Button = Tab:CreateButton({
    Name = "Infinite Yield",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   Rayfield:Destroy()
    end
 })
 
@@ -55,13 +56,7 @@ local Button = Tab:CreateButton({
    Name = "Nameless Admin",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "Fate's Admin",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+   Rayfield:Destroy()
    end
 })
 
@@ -70,6 +65,7 @@ local Button = Tab:CreateButton({
    Name = "The Strongest Battlegrounds",
    Callback = function()
    loadstring(game:HttpGet"https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua")()
+   Rayfield:Destroy()
    end
 })
 
@@ -77,6 +73,7 @@ local Button = Tab:CreateButton({
    Name = "Slap Tower",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/Roblox-Scripts/refs/heads/main/Slap-Tower-Script"))()
+   Rayfield:Destroy()
    end
 })
 
@@ -84,13 +81,30 @@ local Button = Tab:CreateButton({
 	Name = "Ink Game",
 	Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lebumbum/leyield/refs/heads/main/inkgame'))()
-	Rayfield:Destroy()
+   Rayfield:Destroy()
 	end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Evade",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/PY70SKrt"))()
+   Rayfield:Destroy()
+   end
+})
 
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
-   Name = "Coming Soon!",
+   Name = "Fling GUI",
    Callback = function()
-   print("This tab is coming soon.")
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ADSKerOffical/FlingPlayers/main/FlingGUI"))()
    end
 })
+
+local Button = Tab:CreateButton({
+   Name = "Fly GUI"
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end
+})
+
