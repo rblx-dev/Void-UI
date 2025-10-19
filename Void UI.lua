@@ -67,6 +67,13 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+   Name = "QuirkyCMD",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/OfficialCynatica/636bed3e9ba0088733feb986768f8015/raw"))()
+   end
+})
+
 local Tab = Window:CreateTab("Games", "gamepad-2")
 local Button = Tab:CreateButton({
    Name = "The Strongest Battlegrounds",
@@ -119,7 +126,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Natural Disaster Survival",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Natural%20Disaster%20Survival.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -144,14 +151,7 @@ local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "AnnaBypasser",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "QuirkyCMD",
-   Callback = function()
-   loadstring(game:HttpGet("https://gist.githubusercontent.com/OfficialCynatica/636bed3e9ba0088733feb986768f8015/raw",true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua"))()
    end
 })
 
@@ -162,11 +162,19 @@ local Button = Tab:CreateButton({
    end
 })
 
-local Tab = Window:CreateTab("Null Fire", "flame")
+local Tab = Window:CreateTab("Universal", "earth")
 local Button = Tab:CreateButton({
-   Name = "Null Fire",
+   Name = "Null Fire (only in a few games",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Null-Fire/refs/heads/main/Null%20Fire.lua",true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Null%20Fire.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Paste Ware (FPS)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Paste%20Ware.lua"))()
    Rayfield:Destroy()
    end
 })
