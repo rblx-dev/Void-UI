@@ -71,7 +71,7 @@ local Tab = Window:CreateTab("Games", "gamepad-2")
 local Button = Tab:CreateButton({
    Name = "The Strongest Battlegrounds",
    Callback = function()
-   loadstring(game:HttpGet"https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua")()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/tamarixr/tamhub/main/bettertamhub.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -132,6 +132,14 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+   Name = "Dead Rails",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Dead%20Rails.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "AnnaBypasser",
@@ -150,7 +158,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Ultimate Trolling GUI",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/UTG-V6/main/Ultimate%20Trolling%20GUI.lua",true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/UTG%20V6.lua"))()
    end
 })
 
