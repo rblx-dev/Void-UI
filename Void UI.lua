@@ -147,6 +147,14 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+   Name = "RIVALS",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/RIVALS.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "AnnaBypasser",
