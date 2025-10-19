@@ -70,7 +70,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "QuirkyCMD",
    Callback = function()
-   loadstring(game:HttpGet("https://gist.githubusercontent.com/OfficialCynatica/636bed3e9ba0088733feb986768f8015/raw"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/QuirkyCMD/main/QuirkyCMD.lua"))()
    end
 })
 
@@ -172,7 +172,7 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Universal", "earth")
 local Button = Tab:CreateButton({
-   Name = "Null Fire (only in a few games",
+   Name = "Null Fire (only in a few games)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Null%20Fire.lua"))()
    Rayfield:Destroy()
@@ -186,3 +186,4 @@ local Button = Tab:CreateButton({
    Rayfield:Destroy()
    end
 })
+
