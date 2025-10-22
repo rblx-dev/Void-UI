@@ -71,6 +71,7 @@ local Button = Tab:CreateButton({
    Name = "QuirkyCMD",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/QuirkyCMD.lua"))()
+   Rayfield:Destroy()
    end
 })
 
@@ -186,5 +187,3 @@ local Button = Tab:CreateButton({
    Rayfield:Destroy()
    end
 })
-
-
