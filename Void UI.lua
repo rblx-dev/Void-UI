@@ -9,9 +9,9 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Loading UI..",
    LoadingSubtitle = "Scripted by materials not found.",
    ShowText = "Void UI", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
-   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   ToggleUIKeybind = "X", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -19,24 +19,24 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = "Void UI", -- Create a custom folder for your hub/game
-      FileName = "Void UI"
+      FileName = "Void Configuration"
    },
 
     Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "GN2McWRFyE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "User verification.",
+      Title = "discord.gg/GN2McWRFyE",
       Subtitle = "Enter your license key.",
-      Note = "Request for a key in the Discord.", -- Use this to tell the user how to get a key
-      FileName = "Void License", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      Note = "The keys can be found in the Discord server.", -- Use this to tell the user how to get a key
+      FileName = "what are you doing here, bro", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"V01D U1"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"VOID"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 
 
 
@@ -44,9 +44,9 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "UI Initialized",
+   Title = "Injected.",
    Content = "https://discord.gg/GN2McWRFyE",
-   Duration = 10.0,
+   Duration = 5.0,
    Image = "check",
 })
 
@@ -95,7 +95,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
 	Name = "Ink Game",
 	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/lebumbum/leyield/refs/heads/main/inkgame'))()
+	loadstring(game:HttpGet("raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Ink%20Game.lua"))()
    Rayfield:Destroy()
 	end
 })
@@ -103,15 +103,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Evade",
    Callback = function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/PY70SKrt"))()
-   Rayfield:Destroy()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "Funky Friday",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Loader"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Evade.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -119,7 +111,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Prison Life",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/pladmin.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Prison%20Life.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -135,7 +127,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "DOORS",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/DOORS.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -156,11 +148,28 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+   Name = "Arsenal",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Arsenal.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Combat Warriors",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Combat%20Warriors.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
+
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "AnnaBypasser",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/AnnaBypasser.lua"))()
    end
 })
 
@@ -173,7 +182,7 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Universal", "earth")
 local Button = Tab:CreateButton({
-   Name = "Null Fire (only in a few games)",
+   Name = "Null Fire",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Null%20Fire.lua"))()
    Rayfield:Destroy()
@@ -181,9 +190,16 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Paste Ware (FPS)",
+   Name = "Paste Ware",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Paste%20Ware.lua"))()
    Rayfield:Destroy()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fast Animation",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Fast%20Animation.lua"))()
    end
 })
