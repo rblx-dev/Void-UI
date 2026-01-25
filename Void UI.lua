@@ -23,7 +23,7 @@ local Window = Rayfield:CreateWindow({
    },
 
     Discord = {
-      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "GN2McWRFyE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the Discord every time they load it up
    },
@@ -35,8 +35,8 @@ local Window = Rayfield:CreateWindow({
       Note = "The keys can be found in the Discord server.", -- Use this to tell the user how to get a key
       FileName = "what are you doing here, bro", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://pastebin.com/raw/9TZ28eMy"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"VOID"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 
 
 
@@ -164,6 +164,13 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+	Name = "99 Nights in the Forest",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/99%20Nights%20in%20the%20Forest.lua"))()
+	Rayfield:Destroy()
+	end
+})
 
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
@@ -204,3 +211,13 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Input = Tab:CreateInput({
+   Name = "Framerate Limit",
+   CurrentValue = "",
+   PlaceholderText = "60",
+   RemoveTextAfterFocusLost = false,
+   Flag = "Framerate",
+   Callback = function(Text)
+   setfpscap(Text)
+   end
+})
