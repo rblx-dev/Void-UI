@@ -10,7 +10,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Loading UI..",
    LoadingSubtitle = "Scripted by materials not found.",
    ShowText = "UI", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "X", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -26,16 +26,16 @@ local Window = Rayfield:CreateWindow({
     Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "GN2McWRFyE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the Discord every time they load it up
+      RememberJoins = false -- Set this to false to make them join the Discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "discord.gg/GN2McWRFyE",
-      Subtitle = "Enter your license key.",
-      Note = "The keys can be found in the Discord server.", -- Use this to tell the user how to get a key
+      Subtitle = "How'd you get here?",
+      Note = "The key system is disabled...", -- Use this to tell the user how to get a key
       FileName = "void.lic", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"VOID"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 
@@ -166,12 +166,20 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
+   Name = "Combat Warriors",
+   Callback = function()
+   loadstring(game:HttpGet("insert link here"))()
+   Rayfield:Destroy()
+   end
+})
+
+local Button = Tab:CreateButton({
 	Name = "Jujutsu Shenanigans",
 	Callback = function()
 	Rayfield:Notify({
    Title = "Warning",
    Content = "I recommend using an antivirus with this script.",
-   Duration = 5.0,
+   Duration = 2.5,
    Image = "check",
    })
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Jujutsu%20Shenanigans.lua"))()
@@ -269,7 +277,7 @@ local Button = Tab:CreateButton({
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The key has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
 	setclipboard("MoonVMKey-LCnuW60s5iSK4VqkR9")
@@ -279,27 +287,92 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Serverside", "server")
 local Button = Tab:CreateButton({
-	Name = "C00L GUI",
+	Name = "LucyAnna by Auxnos",
 	Callback = function()
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
-	setclipboard("require(12621812058).yeskido("%username%")")
+	setclipboard("require(13321304140)('Your Username')")
 	end
 })
 
 local Button = Tab:CreateButton({
-	Name = "ExSer",
+	Name = "Incendiary",
 	Callback = function()
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
-   setclipboard("require(10868847330):pls("%username%")")
+   setclipboard("require(12591735195):INCENDIARY('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fredbear 2.0 by Protofer_S",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(13761549843).pedobear('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "CR Meme Antideath",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(12599435703)('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Purple Guy by Memerman",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(14057425072)('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Minos Prime",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(13770496456)('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Demogorgon V2",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(90079465185110).load('Your Username')")
    end
 })
