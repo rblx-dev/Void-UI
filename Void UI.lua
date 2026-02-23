@@ -26,16 +26,16 @@ local Window = Rayfield:CreateWindow({
     Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "GN2McWRFyE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = false -- Set this to false to make them join the Discord every time they load it up
+      RememberJoins = true -- Set this to false to make them join the Discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "discord.gg/GN2McWRFyE",
-      Subtitle = "How'd you get here?",
-      Note = "The key system is disabled...", -- Use this to tell the user how to get a key
+      Subtitle = "Discord.",
+      Note = "The key is in the Discord server.", -- Use this to tell the user how to get a key
       FileName = "void.lic", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"VOID"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 
