@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
     Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "GN2McWRFyE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the Discord every time they load it up
+      RememberJoins = false -- Set this to false to make them join the Discord every time they load it up
    },
 
    KeySystem = true, -- Set this to true to use our key system
@@ -374,5 +374,31 @@ local Button = Tab:CreateButton({
     Image = "check",
    })
    setclipboard("require(90079465185110).load('Your Username')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "The Locust",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(75834950186546).MorphMonster('Your Username','locust')")
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Secret Service Panel",
+   Callback = function()
+   Rayfield:Notify({
+    Title = "Copied to clipboard.",
+    Content = "The script has been copied to your clipboard.",
+    Duration = 2.5,
+    Image = "check",
+   })
+   setclipboard("require(16920033857)('Your Username')")
    end
 })
