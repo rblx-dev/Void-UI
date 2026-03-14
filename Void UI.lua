@@ -76,6 +76,14 @@ local Button = Tab:CreateButton({
    end
 })
 
+local Button = Tab:CreateButton({
+	Name = "Console Line by NotAtomz",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Console%20Line.lua"))()
+	Rayfield:Destroy()
+	end
+})
+
 local Tab = Window:CreateTab("Games", "gamepad-2")
 local Button = Tab:CreateButton({
    Name = "The Strongest Battlegrounds",
@@ -203,6 +211,13 @@ local Button = Tab:CreateButton({
 	end
 })
 
+local Button = Tab:CreateButton({
+	Name = "Welcome to Bloxburg",
+	Callback = function()
+	print("Go find a script yourself.")
+	end
+})
+
 local Tab = Window:CreateTab("Commands", "unlink-2")
 local Button = Tab:CreateButton({
    Name = "AnnaBypasser",
@@ -277,7 +292,7 @@ local Button = Tab:CreateButton({
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The key has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
 	setclipboard("MoonVMKey-LCnuW60s5iSK4VqkR9")
@@ -292,7 +307,7 @@ local Button = Tab:CreateButton({
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
 	setclipboard("require(13321304140)('Your Username')")
@@ -305,7 +320,7 @@ local Button = Tab:CreateButton({
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(12591735195):INCENDIARY('Your Username')")
@@ -318,7 +333,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(13761549843).pedobear('Your Username')")
@@ -331,7 +346,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(12599435703)('Your Username')")
@@ -344,7 +359,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(14057425072)('Your Username')")
@@ -357,7 +372,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(13770496456)('Your Username')")
@@ -370,7 +385,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(90079465185110).load('Your Username')")
@@ -382,7 +397,7 @@ local Button = Tab:CreateButton({
    Callback = function()
    Rayfield:Notify({
     Title = "Copied to clipboard.",
-    Content = "Type in VOID and press confirm.",
+    Content = "Just type whatever and press confirm.",
     Duration = 5.0,
     Image = "check",
    })
@@ -396,7 +411,7 @@ local Button = Tab:CreateButton({
    Rayfield:Notify({
     Title = "Copied to clipboard.",
     Content = "The script has been copied to your clipboard.",
-    Duration = 5.0,
+    Duration = 2.5,
     Image = "check",
    })
    setclipboard("require(16920033857)('Your Username')")
