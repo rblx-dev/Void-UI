@@ -48,7 +48,7 @@ Rayfield:Notify({
    Title = "Finished loading.",
    Content = "https://www.youtube.com/@materialsnotfound",
    Duration = 5.0,
-   Image = "syringe",
+   Image = "check",
 })
 
 local Tab = Window:CreateTab("Admin", "shield")
@@ -214,80 +214,25 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
 	Name = "Welcome to Bloxburg",
 	Callback = function()
-	print("Go find a script yourself.")
+	Rayfield:Notify({
+   Title = "Don't have one.",
+   Content = "Find a script yourself.",
+   Duration = 5.0,
+   Image = "x",
+   })
 	end
-})
-
-local Tab = Window:CreateTab("Commands", "unlink-2")
-local Button = Tab:CreateButton({
-   Name = "AnnaBypasser",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/AnnaBypasser.lua"))()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "UTG V6",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/UTG%20V6.lua"))()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "FE Sandevistan V6 by Mahowaga",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/FE%20Sandevistan%20V6.lua"))()
-   end
-})
-
-local Tab = Window:CreateTab("Universal", "earth")
-local Button = Tab:CreateButton({
-   Name = "Null Fire",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Null%20Fire.lua"))()
-   Rayfield:Destroy()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "Paste Ware",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Paste%20Ware.lua"))()
-   Rayfield:Destroy()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "Fast Animation",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Fast%20Animation.lua"))()
-   end
-})
-
-local Button = Tab:CreateButton({
-	Name = "FE Demogorgon (R15)",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/FE%20Demogorgon.lua"))()
-	end
-})
-
-local Button = Tab:CreateButton({
-   Name = "C00LKID GUI",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/C00LKID%20GUI.lua",true))()
-   end
 })
 
 local Tab = Window:CreateTab("Backdoors", "door-open")
 local Button = Tab:CreateButton({
-   Name = "LALOL by LALOL",
+   Name = "LALOL Hub",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/LALOL%20Hub%20Backdoor.lua"))()
    end
 })
 
 local Button = Tab:CreateButton({
-	Name = "Moon by MoonVM",
+	Name = "Moon Executor by MoonVM",
 	Callback = function()
 	Rayfield:Notify({
     Title = "Copied to clipboard.",
@@ -397,7 +342,7 @@ local Button = Tab:CreateButton({
    Callback = function()
    Rayfield:Notify({
     Title = "Copied to clipboard.",
-    Content = "Just type whatever and press confirm.",
+    Content = 'Type in "VOID" and press confirm.',
     Duration = 5.0,
     Image = "check",
    })
@@ -415,5 +360,34 @@ local Button = Tab:CreateButton({
     Image = "check",
    })
    setclipboard("require(16920033857)('Your Username')")
+   end
+})
+
+local Tab = Window:CreateTab("FE", "earth")
+local Button = Tab:CreateButton({
+   Name = "AnnaBypasser",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/AnnaBypasser.lua"))()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fast Animation",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Fast%20Animation.lua"))()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Demogorgon (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/FE%20Demogorgon.lua"))()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sandevistan V6 by Mahowaga",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/FE%20Sandevistan%20V6.lua"))()
    end
 })
