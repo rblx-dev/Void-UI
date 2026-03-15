@@ -19,8 +19,8 @@ local Window = Rayfield:CreateWindow({
 
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = "materialsnotfound", -- Create a custom folder for your hub/game
-      FileName = "VoidConfig"
+      FolderName = "Void_UI", -- Create a custom folder for your hub/game
+      FileName = "void_config.txt"
    },
 
     Discord = {
@@ -45,7 +45,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Injected.",
+   Title = "Finished loading.",
    Content = "https://www.youtube.com/@materialsnotfound",
    Duration = 5.0,
    Image = "syringe",
