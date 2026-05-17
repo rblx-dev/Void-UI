@@ -1,4 +1,4 @@
--- Product Purchase Faker
+-- Product ******
 -- Made by esore 2026
 
 local ScreenGui = Instance.new("ScreenGui")
