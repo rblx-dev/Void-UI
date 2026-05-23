@@ -9,11 +9,8 @@
 	| $$  | $$| $$  | $$|  $$$$$$/| $$$$$$$$|  $$$$$$/|  $$$$$$/      | $$  \ $$         \  $/   |  $$$$$$/
 	|__/  |__/|__/  |__/ \______/ |________/ \______/  \______/       |__/  |__/          \_/     \______/ 
                                                                                                                                                                                 
-	- UI Designed & Built by blackmomo
-	- Framework & Codebase by riky47
-	- Backend by tiahh
-	
-	Welcome, take a look at this non-skidded source.
+	- materials not found
+	- https://www.youtube.com/@materialsnotfound
 	
 ]] end)()
 
