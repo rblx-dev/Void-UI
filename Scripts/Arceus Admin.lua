@@ -1,12 +1,10 @@
 --[[
-		ARCEUS X ADMIN
-		- spdmteam.com
-		
-		Inspired & Code rewrite of Infinite Yield.
-		Specialized in mobile devices.
-		- Riky47#3355
 
-		Source: https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source
+		ARCEUS ADMIN
+
+		materials not found
+
+		https://www.youtube.com/@materialsnotfound
 ]]
 
 local UI_FOLDER = "ArceusAdminConfigs"
