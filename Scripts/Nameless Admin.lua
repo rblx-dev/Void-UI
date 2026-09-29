@@ -4,9 +4,6 @@ local __NA_SPLIT_CONFIG = {
 	sourceTag = __NA_SPLIT_SOURCE_TAG;
 }
 
---!nonstrict
--- © 2026 Nameless Admin. All rights reserved. Do not copy, paste, redistribute, or claim as your own.
-
 local __NARootHost = (getgenv and getgenv()) or _G or {}
 local __NARootPreviousNACaller = type(__NARootHost) == "table" and rawget(__NARootHost, "NACaller") or nil
 local __NARootErrorState = type(__NARootHost) == "table" and rawget(__NARootHost, "__NAErrorLogState") or nil
