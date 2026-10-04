@@ -8,10 +8,12 @@
 	Max    | Programming
 	Damian | Programming
 
+NOT A PART OF SIRIUS  --> materials not found | Subtle Changes
+
 ]]
 
 if debugX then
-	warn('Initialising Rayfield')
+	warn('You should really subscribe to materials not found.')
 end
 
 
@@ -1920,9 +1922,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 				task.wait(math.random(180, 600))
 				if rayfieldDestroyed then break end
 				RayfieldLibrary:Notify({
-					Title = "YouTube Channel",
-					Content = "Subscribe to materials not found!",
-					Duration = 7,
+					Title = "Void UI",
+					Content = "Like the UI? Subscribe to materials not found!",
+					Duration = 10,
 					Image = 4370033185,
 				})
 			end
