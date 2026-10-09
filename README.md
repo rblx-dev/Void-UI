@@ -1,5 +1,5 @@
 # Info
-It's a UI that I've worked on for almost an entire year.
+It's a UI that I've worked on from September 18th, 2025.
 # Loadstring
 ``https://raw.githubusercontent.com/rblx-dev/Void-UI/refs/heads/main/UI.lua``
 # Copyright
