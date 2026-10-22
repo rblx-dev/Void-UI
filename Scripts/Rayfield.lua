@@ -32,7 +32,7 @@ if secureMode then
 end
 
 if debugX then
-	warn('Initialising Rayfield')
+	warn('Void UI, written by @MNF_YouTube')
 end
 
 
@@ -138,15 +138,15 @@ local function secureNotify(wType, title, content)
 		})
 	end)
 end
-local InterfaceBuild = 'UU2NX'
-local Release = "Build 1.753"
-local RayfieldFolder = "Rayfield"
+local InterfaceBuild = 'Beta'
+local Release = "Build 1.754"
+local RayfieldFolder = "Void_UI"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local settingsTable = {
 	General = {
 		-- if needs be in order just make getSetting(name)
-		rayfieldOpen = {Type = 'bind', Value = 'K', Name = 'Rayfield Keybind'},
+		rayfieldOpen = {Type = 'bind', Value = 'X', Name = 'Rayfield Keybind'},
 		-- buildwarnings
 		-- rayfieldprompts
 
@@ -154,7 +154,7 @@ local settingsTable = {
 	System = {
 		usageAnalytics = {
 			Type = 'toggle',
-			Value = true,
+			Value = false,
 			Name = 'Usage Analytics (pseudonymous)',
 			Description = 'Sends a hashed user ID, executor, game, locale and script details when a window opens, plus kick error codes. Nothing you type. sirius.menu/privacy',
 		},
