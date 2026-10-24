@@ -138,9 +138,9 @@ local function secureNotify(wType, title, content)
 		})
 	end)
 end
-local InterfaceBuild = 'Beta'
-local Release = "Build 1.754"
-local RayfieldFolder = "Void_UI"
+local InterfaceBuild = 'UU2NX'
+local Release = "Build 1.753"
+local RayfieldFolder = "Void_Library"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local settingsTable = {
