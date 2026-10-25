@@ -140,7 +140,7 @@ local function secureNotify(wType, title, content)
 end
 local InterfaceBuild = 'UU2NX'
 local Release = "Build 1.753"
-local RayfieldFolder = "Void_Library"
+local RayfieldFolder = "Rayfield"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local settingsTable = {
