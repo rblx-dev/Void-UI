@@ -8,7 +8,7 @@
 	Max    | Programming
 	Damian | Programming
 
-NOT AFFILIATED WITH SIRIUS --> MNF | Slight Changes
+NOT AFFILIATED WITH SIRIUS --> MNF | Slight Changes (straight up stole this)
 
 ]]
 
@@ -140,7 +140,7 @@ local function secureNotify(wType, title, content)
 end
 local InterfaceBuild = 'UU2NX'
 local Release = "Build 1.753"
-local RayfieldFolder = "Rayfield"
+local RayfieldFolder = "Void_Library"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local settingsTable = {
@@ -2017,10 +2017,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Title.Text = Settings.LoadingTitle or "Void UI"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Void UI"
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Written by @MNF_YouTube"
 
 	if Settings.LoadingTitle ~= "Void UI" then
-		LoadingFrame.Version.Text = "Void UI"
+		LoadingFrame.Version.Text = "Written by @MNF_YouTube"
 	end
 
 	if Settings.Icon and Settings.Icon ~= 0 and Topbar:FindFirstChild('Icon') then
