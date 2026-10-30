@@ -2,7 +2,7 @@ Void UI is a **COMPLETELY FREE** script hub. I have been updating it and working
 
 It contains:
 - 3 admin scripts
-- Selected scripts for 18 games
+- Selected scripts for 21 games
 - 1 backdoor scanner
 - 9 serverside scripts
-- 15 FE scripts (a few made by me)
+- 13 FE scripts (a few made by me)
