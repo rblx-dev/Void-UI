@@ -39,7 +39,6 @@ local TweenService = game:GetService("TweenService")
 local ExperienceService = game:GetService("ExperienceService")
 local Executor = identifyexecutor
 local StarterGui = game:GetService("StarterGui")
-local Info = game:getinfo()
 local StreamingEnabled = game:GetService("Workspace").StreamingEnabled
 local FilteringEnabled = game:GetService("Workspace").FilteringEnabled
 local Lighting = game:GetService("Lighting")
@@ -558,6 +557,21 @@ local Input = Tab:CreateInput({
 	Humanoid = char:WaitForChild("Humanoid")
    end)
 	end
+})
+
+local Input = Tab:CreateInput({
+   Name = "Brightness",
+   CurrentValue = "",
+   PlaceholderText = "1",
+   Callback = function(Text)
+   local Brightness = Lighting.Brightness
+   Lighting.Brightness = (Text)
+   if Lighting.Brightness = (Text)
+      print("Your brightness has been updated.")
+   else
+      print("Your brightness has not been changed.")
+   end
+   end
 })
 
 local Button = Tab:CreateButton({
