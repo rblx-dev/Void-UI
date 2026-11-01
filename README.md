@@ -4,5 +4,5 @@ It contains:
 - 3 admin scripts
 - Selected scripts for 21 games
 - 1 backdoor scanner
-- 9 serverside scripts
+- 12 serverside scripts
 - 13 FE scripts (a few made by me)
