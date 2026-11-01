@@ -37,7 +37,7 @@ local HttpService = game:GetService("HttpService")
 local CoreGui = game:GetService("CoreGui")
 local TweenService = game:GetService("TweenService")
 local ExperienceService = game:GetService("ExperienceService")
-local Executor = identifyexecutor
+local Executor = identifyexecutor and select(2, pcall(identifyexecutor)) or "Unknown Executor"
 local StarterGui = game:GetService("StarterGui")
 local StreamingEnabled = game:GetService("Workspace").StreamingEnabled
 local FilteringEnabled = game:GetService("Workspace").FilteringEnabled
@@ -85,8 +85,8 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Void UI - Loaded",
-   Content = "Scripted by @MNF_YouTube",
+   Title = "Void UI by @MNF_YouTube",
+   Content = "You're using " .. Executor,
    Duration = 10.0,
    Image = "check",
 })
@@ -256,7 +256,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Sell Lemons by vaehz",
+   Name = "Sell Lemons by @vaehz",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Sell%20Lemons.lua"))()
    Rayfield:Destroy()
@@ -301,17 +301,15 @@ local Button = Tab:CreateButton({
      end
    end
 })
-   
-local Tab = Window:CreateTab("Backdoor Scanner", "door-open")
+
+local Tab = Window:CreateTab("Serverside", "server")
 
 local Button = Tab:CreateButton({
-   Name = "LALOL Hub",
+   Name = "LALOL Hub (Backdoor Scanner)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/LALOL%20Hub%20Backdoor.lua"))()
    end
 })
-
-local Tab = Window:CreateTab("Serverside", "server")
 
 local Button = Tab:CreateButton({
 	Name = "LucyAnna by Auxnos",
@@ -472,7 +470,7 @@ local Button = Tab:CreateButton({
 local Tab = Window:CreateTab("FE", "earth")
 
 local Button = Tab:CreateButton({
-   Name = "Fast Animation",
+   Name = "Fast Animations",
    Callback = function()
    while wait() do
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Fast%20Animation.lua"))()
@@ -502,9 +500,16 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Brainrot Police by vaehz",
+   Name = "Brainrot Police by @vaehz",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Brainrot%20Police.lua"))()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Product Faker V2 by @vaehz",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Product%20Faker%20V2.lua"))()
    end
 })
 
@@ -566,7 +571,7 @@ local Input = Tab:CreateInput({
    Callback = function(Text)
    local Brightness = Lighting.Brightness
    Lighting.Brightness = (Text)
-   if Lighting.Brightness = (Text)
+   if Brightness.Value >=(Text) then
       print("Your brightness has been updated.")
    else
       print("Your brightness has not been changed.")
@@ -590,13 +595,6 @@ local Button = Tab:CreateButton({
    Duration = 5,
    })
    loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Server%20Finder%20Deluxe.lua"))()
-   end
-})
-
-local Button = Tab:CreateButton({
-   Name = "Product Faker V2 by vaehz",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Product%20Faker%20V2.lua"))()
    end
 })
 
