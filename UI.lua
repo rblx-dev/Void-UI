@@ -94,17 +94,25 @@ Rayfield:Notify({
 local Tab = Window:CreateTab("Admin", "shield")
 
 local Button = Tab:CreateButton({
-   Name = "Infinite Yield by Edge, Moon and Toon",
+   Name = "Nameless Admin by Itseverydayyou",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Infinite%20Yield.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Nameless%20Admin.lua"))()
    Rayfield:Destroy()
    end
 })
 
 local Button = Tab:CreateButton({
-   Name = "Nameless Admin by Itseverydayyou",
+   Name = "Secret Service Panel by @MNF_YouTube",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Nameless%20Admin.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Secret%20Service%20Panel.lua"))()
+   Rayfield:Destroy()
+   end
+})
+
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield (420 Edition)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/Infinite%20Yield.lua"))()
    Rayfield:Destroy()
    end
 })
@@ -302,14 +310,7 @@ local Button = Tab:CreateButton({
    end
 })
 
-local Tab = Window:CreateTab("Serverside", "server")
-
-local Button = Tab:CreateButton({
-   Name = "LALOL Hub (Backdoor Scanner)",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/rblx-dev/Void-UI/main/Scripts/LALOL%20Hub%20Backdoor.lua"))()
-   end
-})
+local Tab = Window:CreateTab("Server-Side", "server")
 
 local Button = Tab:CreateButton({
 	Name = "LucyAnna by Auxnos",
